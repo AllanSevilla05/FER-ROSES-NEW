@@ -1,0 +1,141 @@
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Header and Navigation */
+    #header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+    }
+
+    .logo {
+        max-width: 200px;
+        margin-bottom: 15px;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    #navbar li {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #navbar li a {
+        padding: 10px;
+        width: 100%;
+        display: block;
+    }
+
+    /* Cart Icon */
+    .cart-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .cart-icon i {
+        margin-right: 5px;
+        font-size: 1.2em;
+    }
+
+    #cart-count {
+        background-color: #088178;
+        color: white;
+        padding: 2px 6px;
+        border-radius: 50%;
+        font-size: 0.8em;
+        margin-left: 5px;
+    }
+
+    /* Checkout Page */
+    .checkout-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .checkout-form, 
+    .order-summary {
+        width: 100%;
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    .form-section {
+        margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    /* Cart Page */
+    #cart table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    #cart table td {
+        padding: 10px;
+    }
+
+    .quantity-controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Product Cards */
+    #product1 .pro-container {
+        justify-content: center;
+    }
+
+    #product1 .pro {
+        margin: 15px;
+        width: calc(100% - 30px);
+        max-width: 300px;
+    }
+
+    /* Confirmation Page */
+    .confirmation-content {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .order-details {
+        padding: 15px;
+    }
+
+    /* Buttons */
+    .normal {
+        padding: 12px 20px;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px;
+    }
+
+    footer .col {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,27 @@
+.cart-icon {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+#cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #088178;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    min-width: 15px;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.far.fa-shopping-cart {
+    font-size: 20px;
+    position: relative;
+}

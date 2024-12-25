@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="""en"></html>
+<head>
+    <meta charset="""UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FER Roses - Luxury rose arrangements and floral designs for all occasions. Shop our exclusive collection of premium roses and custom bouquets.">
+    <meta name="keywords" content="roses, luxury roses, flower arrangements, bouquets, floral design, wedding flowers, events">
+    <meta name="author" content="FER Roses">
+    <meta property="og:title" content="FER Roses - Luxury Rose Arrangements">
+    <meta property="og:description" content="Discover our exclusive collection of luxury rose arrangements and premium floral designs.">
+    <meta property="og:image" content="Images/fwdlogoferflowers/ferflower-logo.png">
+    <meta property="og:url" content="https://ferflowers.com">
+    <meta http-equiv="X-Content-Type-Security-Policy" content="default-src 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+    <title>FER Roses - Luxury Rose Arrangements</title>
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" as="style">
+    <link rel="preload" href="Images/fwdlogoferflowers/ferflower-logo.png" as="image">
+    
+    <!-- Optimize loading performance -->
+    <link rel="preconnect" href="https://pro.fontawesome.com">
+    <link rel="dns-prefetch" href="https://pro.fontawesome.com">
+    
+    <!-- Critical CSS inline -->
+    <style>
+        :root {
+            --primary: #974e57;
+            --secondary: #333;
+            --primary-color: #B12A2A;  /* Logo red color */
+        }
+
+        #navbar li a:hover,
+        #navbar li a.active {
+            color: var(--primary-color);
+        }
+
+        #navbar li a.active::after,
+        #navbar li a:hover::after {
+            background: var(--primary-color);
+        }
+
+        #hero button {
+            background-color: var(--primary-color);
+        }
+
+        #hero button:hover {
+            background-color: #8B2020;
+        }
+
+        .section-p1 h2 {
+            color: var(--primary-color);
+        }
+
+        .fe-box h6 {
+            background-color: var(--primary-color);
+        }
+
+        .pro .des h4 {
+            color: var(--primary-color);
+        }
+
+        .pro .cart {
+            background-color: var(--primary-color);
+        }
+
+        .pro .cart:hover {
+            background-color: #8B2020;
+        }
+
+        #banner button {
+            background-color: var(--primary-color);
+        }
+
+        #banner button:hover {
+            background-color: #8B2020;
+        }
+
+        #sm-banner .banner-box button {
+            background-color: var(--primary-color);
+        }
+
+        #sm-banner .banner-box button:hover {
+            background-color: #8B2020;
+        }
+
+        #newsletter button {
+            background-color: var(--primary-color);
+        }
+
+        #newsletter button:hover {
+            background-color: #8B2020;
+        }
+
+        /* Enable smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Use system font stack */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+        }
+
+        /* Optimize animations */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        /* Performance optimizations */
+        img {
+            content-visibility: auto;
+            contain-intrinsic-size: auto;
+        }
+
+        /* Reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Mobile responsiveness */
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 95%;
+                margin: 0 auto;
+            }
+        }
+    </style>
+    
+    <!-- Async load non-critical CSS -->
+    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/smooth-scroll.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/mobile-responsive.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+          media="print" onload="this.media='all'">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Images/fwdlogoferflowers/ferflower-logo.png">
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://pro.fontawesome.com">
+    
+    <!-- Preload critical images -->
+    <link rel="preload" as="image" href="Images/fwdlogoferflowers/ferflower-logo-hor.png">
+    
+    <!-- Cart functionality -->
+    <script src="js/inject-cart.js"></script>
+    
+    <!-- Defer non-critical scripts -->
+    <script src="js/cart.js" defer></script>
+    <script src="js/common.js" defer></script>
+</head>
+
+<body>
+
+    <header id="header">
+        <a href="index.html">
+            <!-- Responsive images with lazy loading -->
+            <img src="Images/fwdlogoferflowers/ferflower-logo.png" 
+                 alt="FER Roses Logo" 
+                 loading="lazy"
+                 width="200"
+                 height="60"
+                 decoding="async">
+        </a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="cart.html" class="cart-icon">
+                        <i class="far fa-shopping-cart"></i>
+                        <span id="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Luxury Floral Design</h1>
+                <h2>Elegant & Fresh</h2>
+                <h3>For Every Occasion</h3>
+                <p>Create lasting memories with our beautiful arrangements</p>
+                <a href="shop.html" class="hero-btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Works we Offer</h2>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="Instagram Images/IMG_3328.jpg" alt="Luxury Floral Design" loading="lazy" data-src="Instagram Images/IMG_3328.jpg">
+                <div class="des">
+                    <h5>Luxury Arrangements</h5>
+                    <p>Exquisite floral designs for special occasions</p>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="Instagram Images/IMG_3326.jpg" alt="Wedding Flowers" loading="lazy" data-src="Instagram Images/IMG_3326.jpg">
+                <div class="des">
+                    <h5>Wedding Collections</h5>
+                    <p>Romantic and elegant wedding arrangements</p>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="Instagram Images/IMG_3327.jpg" alt="Event Decor" loading="lazy" data-src="Instagram Images/IMG_3327.jpg">
+                <div class="des">
+                    <h5>Event Decorations</h5>
+                    <p>Stunning floral displays for any venue</p>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="Instagram Images/IMG_3330.jpg" alt="Custom Bouquets" loading="lazy" data-src="Instagram Images/IMG_3330.jpg">
+                <div class="des">
+                    <h5>Custom Bouquets</h5>
+                    <p>Personalized arrangements for all occasions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="banner" class="section-m1">
+        <h4>Custom Arrangements</h4>
+        <h2>Create your perfect <span>floral design</span> for any occasion</h2>
+        <button class="normal" onclick="window.location.href='contact.html'">Contact Us</button>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="Images/fwdlogoferflowers/ferflower-logo-hor.png" alt="FER Roses">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> Miami, Florida</p>
+            <p><strong>Phone: </strong> +1 (786) 873-7838</p>
+            <p><strong>Hours: </strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <a href="https://www.instagram.com/ferflowers.shop?igshid=aWx6ZGxxN2J5aGU4" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About Us</a>
+            <a href="delivery.html">Delivery Information</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="cart.html">View Cart</a>
+            <a href="orders.html">Track My Order</a>
+            <a href="contact.html">Help</a>
+        </div>
+
+        <div class="col payment">
+            <h4>Secure Payment</h4>
+            <p>We accept all major credit cards</p>
+            <img src="Instagram Images/square.png" alt="Payment Methods">
+        </div>
+
+        <div class="copyright">
+            <p> 2024, FER Flowers - All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        // Register Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/js/service-worker.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registered:', registration);
+                    })
+                    .catch(error => {
+                        console.log('ServiceWorker registration failed:', error);
+                    });
+            });
+        }
+
+        // Add to Home Screen prompt
+        let deferredPrompt;
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+        });
+
+        // Lazy load images
+        document.addEventListener('DOMContentLoaded', function() {
+            const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+            if ('IntersectionObserver' in window) {
+                const imageObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            img.src = img.dataset.src;
+                            img.classList.add('loaded');
+                            imageObserver.unobserve(img);
+                        }
+                    });
+                });
+                lazyImages.forEach(img => imageObserver.observe(img));
+            }
+        });
+    </script>
+    <script>
+        function updateCartCount() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+            document.getElementById('cart-count').textContent = cartCount;
+        }
+
+        document.addEventListener('DOMContentLoaded', updateCartCount);
+    </script>
+    <script src="js/cart-manager.js"></script>
+    <script src="js/cart-count.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="script.js"></script>
+    <script>
+        window.addEventListener('error', function(e) {
+            console.error('Global error handler:', e.error);
+        });
+
+        // Handle image loading errors
+        document.querySelectorAll('img').forEach(img => {
+            img.onerror = () => {
+                img.style.display = 'none';
+                console.error(`Failed to load image: ${img.src}`);
+            };
+        });
+
+        // Performance monitoring
+        performance.mark('start');
+
+        // Error handling
+        window.onerror = function(msg, url, line) {
+            console.error(`Error: ${msg}\nURL: ${url}\nLine: ${line}`);
+            return false;
+        };
+
+        // Lazy loading images
+        document.addEventListener('DOMContentLoaded', () => {
+            const images = document.querySelectorAll('img[data-src]');
+            const imageObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.removeAttribute('data-src');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+            
+            images.forEach(img => imageObserver.observe(img));
+        });
+    </script>
+</body>
+
+</html>

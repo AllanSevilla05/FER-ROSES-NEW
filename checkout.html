@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - FER Roses</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart-styles.css">
+    <link rel="stylesheet" href="css/smooth-scroll.css">
+    <link rel="stylesheet" href="css/mobile-responsive.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <section id="header">
+        <a href="index.html"><img src="Images/fwdlogoferflowers/ferflower-logo-hor.png" class="logo" alt="FER Roses"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="cart.html" class="cart-icon" aria-label="Shopping Cart">
+                        <i class="far fa-shopping-cart"></i>
+                        <span id="cart-count" role="status" aria-live="polite">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="checkout-header" class="section-p1">
+        <h2>Checkout</h2>
+        <p>Complete your order</p>
+        <a href="cart.html" class="return-to-cart">
+            <i class="far fa-arrow-left"></i> Return to Cart
+        </a>
+    </section>
+
+    <section id="checkout" class="section-p1">
+        <div class="checkout-container">
+            <!-- Order Summary -->
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <div id="checkout-items">
+                    <!-- Items will be populated by JavaScript -->
+                </div>
+                <div class="checkout-totals">
+                    <div class="subtotal">
+                        <span>Subtotal</span>
+                        <span id="checkout-subtotal">$0.00</span>
+                    </div>
+                    <div class="shipping">
+                        <span>Shipping</span>
+                        <span id="checkout-shipping">$0.00</span>
+                    </div>
+                    <div class="tax">
+                        <span>Tax</span>
+                        <span id="checkout-tax">$0.00</span>
+                    </div>
+                    <div class="total">
+                        <span>Total</span>
+                        <span id="checkout-total">$0.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Checkout Form -->
+            <div class="checkout-form">
+                <form id="payment-form">
+                    <!-- Contact Information -->
+                    <div class="form-section">
+                        <h3>Contact Information</h3>
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <!-- Shipping Address -->
+                    <div class="form-section">
+                        <h3>Shipping Address</h3>
+                        <div class="form-group">
+                            <label for="street">Street Address</label>
+                            <input type="text" id="street" name="street" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="apartment">Apartment, suite, etc. (optional)</label>
+                            <input type="text" id="apartment" name="apartment">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" id="city" name="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="state">State</label>
+                                <select id="state" name="state" required>
+                                    <option value="">Select State</option>
+                                    <option value="FL">Florida</option>
+                                    <!-- Add other states as needed -->
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="zipCode">ZIP Code</label>
+                                <input type="text" id="zipCode" name="zipCode" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Payment -->
+                    <div class="form-section">
+                        <h3>Payment</h3>
+                        <p class="payment-notice">Payment will be collected upon delivery.</p>
+                        <p class="payment-methods">We accept: Cash, Credit Cards, and Mobile Payments</p>
+                    </div>
+
+                    <!-- Special Instructions -->
+                    <div class="form-section">
+                        <h3>Special Instructions (Optional)</h3>
+                        <div class="form-group">
+                            <textarea id="instructions" name="instructions" rows="4" placeholder="Add any special instructions for your order"></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        Place Order
+                        <span class="total-amount" id="button-total">$0.00</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="Images/fwdlogoferflowers/ferflower-logo-hor.png" alt="FER Roses">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> Miami, Florida</p>
+            <p><strong>Phone: </strong> +1 (786) 873-7838</p>
+            <p><strong>Hours: </strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <a href="https://www.instagram.com/ferflowers.shop?igshid=aWx6ZGxxN2J5aGU4" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About Us</a>
+            <a href="delivery.html">Delivery Information</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="cart.html">View Cart</a>
+            <a href="contact.html">Help</a>
+        </div>
+
+        <div class="col payment">
+            <h4>Secure Payment</h4>
+            <p>We accept all major credit cards</p>
+            <img src="img/pay/pay.png" alt="Payment Methods">
+        </div>
+
+        <div class="copyright">
+            <p> 2024, FER Flowers - All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/cart-manager.js"></script>
+    <script src="js/cart-count.js"></script>
+    <script src="js/cart.js"></script>
+    <script>
+        const bar = document.getElementById('bar');
+        const close = document.getElementById('close');
+        const nav = document.getElementById('navbar');
+
+        if (bar) {
+            bar.addEventListener('click', () => {
+                nav.classList.add('active');
+            });
+        }
+
+        if (close) {
+            close.addEventListener('click', () => {
+                nav.classList.remove('active');
+            });
+        }
+    </script>
+    <script>
+        function updateCartCount() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+            document.getElementById('cart-count').textContent = cartCount;
+        }
+
+        document.addEventListener('DOMContentLoaded', updateCartCount);
+    </script>
+</body>
+
+</html>

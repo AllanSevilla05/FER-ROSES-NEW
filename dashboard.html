@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard - FER Roses</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body>
+    <section id="header">
+        <a href="index.html"><img src="Images/fwdlogoferflowers/ferflower-logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">
+                    <i class="far fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a></li>
+                <li><a href="dashboard.html" class="active">
+                    <i class="far fa-user"></i>
+                </a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="dashboard" class="section-p1">
+        <div class="dashboard-container">
+            <div class="dashboard-header">
+                <h1>My Dashboard</h1>
+                <div class="user-info">
+                    <i class="far fa-user-circle"></i>
+                    <span id="user-name">Welcome back!</span>
+                </div>
+            </div>
+
+            <div class="dashboard-content">
+                <div class="dashboard-section">
+                    <h2>Recent Orders</h2>
+                    <div id="recent-orders" class="order-list">
+                        <!-- Orders will be populated here -->
+                    </div>
+                </div>
+
+                <div class="dashboard-section">
+                    <h2>Order Tracking</h2>
+                    <div class="tracking-form">
+                        <input type="text" id="order-id" placeholder="Enter Order ID">
+                        <button onclick="trackOrder()">Track Order</button>
+                    </div>
+                    <div id="tracking-result"></div>
+                </div>
+
+                <div class="dashboard-section">
+                    <h2>My Preferences</h2>
+                    <div class="preferences-form">
+                        <div class="form-group">
+                            <label>Email Notifications</label>
+                            <div class="toggle-switch">
+                                <input type="checkbox" id="email-notifications" checked>
+                                <label for="email-notifications"></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Order Updates</label>
+                            <div class="toggle-switch">
+                                <input type="checkbox" id="order-updates" checked>
+                                <label for="order-updates"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="Images/fwdlogoferflowers/ferflower-logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 123 Main Street, City, State ZIP</p>
+            <p><strong>Phone:</strong> +1 234 567 8900</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About Us</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="cart.html">View Cart</a>
+            <a href="contact.html">Help</a>
+        </div>
+
+        <div class="copyright">
+            <p> 2024 FER Roses. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/dashboard.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

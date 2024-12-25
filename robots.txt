@@ -1,0 +1,12 @@
+# www.ferflowers.com robots.txt file
+User-agent: *
+Allow: /
+Disallow: /js/
+Disallow: /admin/
+Disallow: /checkout/
+
+Sitemap: https://ferflowers.com/sitemap.xml
+
+# Allow all images to be crawled
+Allow: /Images/
+Allow: /img/

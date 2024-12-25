@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - FER Roses</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="index.html"><img src="Images/fwdlogoferflowers/ferflower-logo-hor.png" class="logo" alt="FER Roses"></a>
+        
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="cart.html" class="cart-icon">
+                        <i class="far fa-shopping-cart"></i>
+                        <span id="cart-count">0</span>
+                    </a>
+                </li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        
+        <div id="mobile">
+            <a href="cart.html">
+                <i class="far fa-shopping-cart"></i>
+                <span id="mobile-cart-count">0</span>
+            </a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="Instagram Images/IMG_3328.jpg" width="100%" id="MainImg" alt="">
+            
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="Instagram Images/IMG_3328.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="Instagram Images/IMG_3326.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="Instagram Images/IMG_3327.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="Instagram Images/IMG_3330.jpg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-pro-details">
+            <h6>Home / Flowers</h6>
+            <h4 id="product-name">Luxury Arrangements</h4>
+            <p id="product-description">Elegant and luxurious floral arrangement featuring premium roses and seasonal flowers.</p>
+            
+            <div class="quantity-selection">
+                <h4>Quantity</h4>
+                <div class="quantity-controls">
+                    <button onclick="updateQuantity(-1)">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10" class="quantity-input">
+                    <button onclick="updateQuantity(1)">+</button>
+                </div>
+            </div>
+
+            <button class="normal" onclick="addToCart()">
+                <i class="far fa-shopping-cart"></i>
+                Add to Cart
+            </button>
+
+            <div class="product-details">
+                <!-- This will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <div class="notification" id="notification">
+        <!-- Notification messages will be displayed here -->
+    </div>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="Images/fwdlogoferflowers/ferflower-logo-hor.png" alt="FER Roses">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> Miami, Florida</p>
+            <p><strong>Phone: </strong> +1 (786) 873-7838</p>
+            <p><strong>Hours: </strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <a href="https://www.instagram.com/ferflowers.shop?igshid=aWx6ZGxxN2J5aGU4" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About Us</a>
+            <a href="delivery.html">Delivery Information</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="cart.html">View Cart</a>
+            <a href="orders.html">Track My Order</a>
+            <a href="contact.html">Help</a>
+        </div>
+
+        <div class="col payment">
+            <h4>Secure Payment</h4>
+            <p>We accept all major credit cards</p>
+            <img src="img/pay/pay.png" alt="Payment Methods">
+        </div>
+
+        <div class="copyright">
+            <p> 2024, FER Flowers - All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function() {
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function() {
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function() {
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function() {
+            MainImg.src = smallimg[3].src;
+        }
+    </script>
+
+    <script src="js/cart-manager.js"></script>
+    <script src="js/cart-count.js"></script>
+    <script src="js/product.js"></script>
+</body>
+
+</html>
